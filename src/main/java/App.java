@@ -25,8 +25,9 @@ public class App {
         int area = length * width; //Here we are finding the total area of the room
         double gallon = (0.00285714285); //Here is the conversion rate of the equivalent from 1 gallon to square feet.
 
-        double total_gallons = Math.ceil(area/350); //Here we are finding the total gallons needed, and we rounded.
+        int total_gallons = (area/350); //Here we are finding the total gallons needed, and we rounded.
 
+        total_gallons++;
         System.out.println("You will need to purchase " + total_gallons + " gallons of paint to cover " + area + " square feet");
     }
 }
